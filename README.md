@@ -1,11 +1,12 @@
-# RandoMyzer
+# RandoMyzer - CHANGE TO THE TITLE***
 ## Description
 *As an instructor I wanted an easy tool to select random students from my classes so that I can ask pop-quiz style questions or create random groups for projects*
  
  [Click Here for live site](https://djibba22.github.io/RandoMyzer/)
  
 
-## Technolgies List
+## Technolgies List - CHNAGE TITLE HERE TOO...!
+ + ADDED NEW CONTENT...!
  + HTML 5
  + CSS 3
  + Javascript ES6
