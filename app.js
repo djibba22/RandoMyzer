@@ -85,6 +85,16 @@ const addStudent = (groupName,student) => {
     //testing
     console.log(`Showing students for Class: ${currentClass.name}`);
 }
+
+//===== This deletes a specific student =====\\
+const deleteStudent = (groupName,student) => {
+    let currentClass = JSON.parse(localStorage.getItem(groupName));
+    let studentIndex = currentClass.students.indexOf(student);
+    currentClass.students.pop(studentIndex);
+    localStorage.setItem(groupName, JSON.stringify(currentClass));
+    showStudents(currentClass.name,currentClass.students);
+}
+
 // this will show the students in the group
 const showStudents = (className,students) => {
     const studentList = document.querySelector("#studentList");
@@ -96,10 +106,21 @@ const showStudents = (className,students) => {
     ul.classList.add("list-group");
     //build the list on the modal
     for (let index = 0; index < students.length; index++) {
+        // Delete Button and Delete Icon
+        let deleteBtnIcon = document.createElement('i');
+        deleteBtnIcon.className = "fas fa-trash-alt";
+        deleteBtnIcon.id = "deleteBtnIcon";
+        let deleteBtn = document.createElement("btn");
+        deleteBtn.id = "deleteStudent";
+        deleteBtn.className = "btn btn-primary-outline";
+        deleteBtn.append(deleteBtnIcon);
+
         let li = document.createElement("li");
         li.classList.add("list-group-item");
         //add the name to the list
         li.textContent = students[index];
+        // add delete icon to each entry
+        li.append(deleteBtn);
         //attach the li             
         ul.append(li);     
     }
@@ -185,6 +206,19 @@ document.addEventListener('click',function(e){
         }
         //clear the input
         newStudentInput.value = "";
+     }
+ });
+
+ //========= CLICK FOR DELETING A STUDENT FROM A CLASS ==================///
+ document.addEventListener('click',function(e){
+    //check if its the details button
+    if(e.target && e.target.id == 'deleteBtnIcon'){
+        //new Audio('./sounds/short_fast.mp3').play();
+        console.log("Delete Student clicked");
+        let studentName = e.target.parentElement.parentElement.textContent;
+        let groupName = document.querySelector(".modal-title").innerText;
+        deleteStudent(groupName, studentName);
+
      }
  });
 
