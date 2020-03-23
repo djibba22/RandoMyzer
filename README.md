@@ -1,4 +1,5 @@
 # RandoMyzer
+## H2 Easily pick random students from your classroom!
 Select random students from classes that you create
 ![create classrooms](./images/homescreen.png "Create Classrooms")
 ![create classrooms](./images/classrooms.png "Create Classrooms")
