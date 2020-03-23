@@ -4,19 +4,19 @@
  
  [Click Here for live site](https://djibba22.github.io/RandoMyzer/)
  
-<dl>
-  <dt>Definition list</dt>
-  <dd>HTML 5</dd>
-  <dd>CSS 3</dd>
-  <dd>Javascript ES6</dd>
-  <dd>JQuery</dd>
-  <dd>LocalStorage</dd>
 
-##  Just Go to the site and create your classroom
+## Technolgies List
+ + HTML 5
+ + CSS 3
+ + Javascript ES6
+ + JQuery
+ + LocalStorage
+
+##  Just Go to the site
 ![create classrooms](./images/homescreen.png "Create Classrooms")
-##  Then add some students to your class.
+## Create your classrooms..
 ![create classrooms](./images/classrooms.png "Create Classrooms")
-##  Make sure you fill out the form .. to add a student.
+## Add students to the class..
 ![get a random student](https://media.giphy.com/media/W6WItj5JmjyT1uXu7H/giphy.gif "Create Classrooms")
 ##  Just click the random button to get your lucky winner!
 ![get a random student](https://media.giphy.com/media/VIEmbKFN76mHv45oE1/giphy.gif "Create Classrooms")
