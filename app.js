@@ -89,6 +89,7 @@ const addStudent = (groupName,student) => {
 const showStudents = (className,students) => {
     const studentList = document.querySelector("#studentList");
     studentList.innerHTML = "";
+    /* === ToDo create two lists next to eachother ===  */
     if( students.length <= 0){
        studentList.innerHTML = "This class is Empty."
     }else{
